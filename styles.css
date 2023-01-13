@@ -28,8 +28,8 @@ hr {
 }
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
-  background-color: #DC4F9C;
-    border-color: #DC4F9C;
+  background-color: #FF5517;
+    border-color: #FF5517;
 }
 
 .list-group-item {
@@ -39,13 +39,13 @@ hr {
 h1 {
   font-size: 1.4em;
   padding-top: 10px;
-  color: #DC4F9C;
+  color: #FF5517;
 }
 
 h2 {
   font-size: 1.1em;
   padding-top: 10px;
-  color: #6FCCDD;
+  color: #03FFFF;
 }
 
 h3 {
