@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.2.1",
+    "Version": "4.2.2",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -286,10 +286,10 @@
     },
     "shroomDK": {
       "Package": "shroomDK",
-      "Version": "0.1.1",
+      "Version": "0.2.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "28b8ac7aa1d889d635c3ac3c5150b11a",
+      "Hash": "48901044139fbef223fc671f31473e2f",
       "Requirements": [
         "httr",
         "jsonlite"
@@ -335,10 +335,10 @@
     },
     "xfun": {
       "Package": "xfun",
-      "Version": "0.31",
+      "Version": "0.39",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "a318c6f752b8dcfe9fb74d897418ab2b",
+      "Hash": "8f56e9acb54fb525e66464d57ab58bcb",
       "Requirements": []
     },
     "yaml": {
