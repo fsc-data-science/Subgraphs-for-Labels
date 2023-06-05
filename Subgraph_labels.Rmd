@@ -117,10 +117,3 @@ reactable(all_subgraphs, resizable = TRUE)
 All subgraph labels are stored both in the crosschain.core.address_labels table, which holds all labels for all chains, and in the relevant [blockchain].core.dim_labels table. 
 
 These labels can easily be joined to a query to provide clarity and context around addresses!
-
-
-
-
-
-
-
