@@ -16,7 +16,7 @@ editor_options:
 
 # Intro
 
-FlipsideCrypto's Research is open source. Check out all the code for this report [here](https://github.com/fsc-data-science/Subgraphs-for-Labels) on github.
+Flipside Crypto's Research is open source. Check out all the code for this report [here](https://github.com/fsc-data-science/Subgraphs-for-Labels) on github.
 
 ```{r, warning = FALSE, message = FALSE}
 # Libraries
@@ -31,7 +31,7 @@ library(reactable)
 
 # What are Subgraphs?
 
-Subgraphs are a product of [The Graph](https://thegraph.com/), which provide an industry standard on how to access blockchain data via open APIs. There are subgraphs for many things like governance, ENS, dex/defi liquidity pools and more! Many protocols leverage custom built subgraphs to track activity within their ecosystem! 
+Subgraphs are a product of [The Graph](https://thegraph.com/), which provide an industry standard on how to access blockchain data via open APIs. There are subgraphs for many things like governance, ENS, dex/defi liquidity pools and more! Many protocols leverage custom built subgraphs to track activity within their ecosystem.
 
 Since these subgraphs are open, we can also tap into the data and label contract addresses! Predominantly, we focused on dex and defi protocols, in order to find any liquidity pools that belong to each protocol. 
 
@@ -94,9 +94,9 @@ reactable(subgraph_liquiditypools,columns = list(
 ```
 
 
-And Viola! We have the top 100 pools on Uniswap based on TVL, as well as the pool address and the token address and symbol that comprise the pool! The interoperability of Flipside's livequery and subgraphs becomes quite apparent! 
+And Viola! We have the top 100 pools on Uniswap based on TVL, as well as the pool address, the token addresses, and symbols that comprise the pool! The interoperability of Flipside's livequery and subgraphs becomes quite apparent! 
 
-Here at flipside, we use this exact process to discover pools across many defi and dex protocols in order to add them to our address labels tables! 
+Here at Flipside, we use this exact process to discover pools across many defi and dex protocols in order to add them to our address labels tables! 
 
 
 # What Subgraphs does Flipside use?
