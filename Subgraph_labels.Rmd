@@ -112,6 +112,16 @@ reactable(all_subgraphs, resizable = TRUE)
 ```
 
 
+# Why does Flipside use Subgraphs, and how are their labels any different?
+
+Flipside uses subgraphs for labels because of their accuracy and consistency. A protocol subgraph is often built by the protocol itself and is used to monitor things like TVL, swap amounts, etc. for their internal analytics. We want to ensure that our labels are in sync with the information that these protocols have and have provided openly to others. 
+
+Loading these labels into our labels tables allows our users to easily join against our existing chain data to provide clarity around address names. Flipside creates blockchain data tables, we can then bring in clean and accurate labels that can be joined against the data and level up analysts' dashboards. 
+
+Flipside also adds label_type and label_subtype identifications on top of what is provided by the subgraphs! A subgraph will only provide information such as contract address and name. For example, in the table above we see that the address '0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640' is a Uniswap 'USDC/WETH pool'. We make this a little more explicit by labeling that address with the name, the protocol, and add in label_type and subtype. In this example, we would label the type as 'dex' and subtype as 'pool'. These label types and subtypes allow for users to further segment our labels! If a user is only interested in dex pools, a user could filter down to only those, and return pools across multiple protocols (uniwap, sushiswap, etc.). This is much easier than having to manually enter in every dex that one is interested in, and is another way we try to help analysts with their insights!
+
+
+
 # Where are these labels stored?
 
 All subgraph labels are stored both in the crosschain.core.address_labels table, which holds all labels for all chains, and in the relevant [blockchain].core.dim_labels table. 
