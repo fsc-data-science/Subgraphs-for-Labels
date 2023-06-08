@@ -27,7 +27,7 @@ To replicate this analysis please do the following:
 
 1.  Clone this repo.
 2.  Save your API key into a .txt file as 'api_key.txt' (this exact naming allows the provided .gitignore to ignore your key and keep it off github).
-3.  Open the `Subgraphs-for-Labels` R Project file in your R IDE (we recommend, RStudio).
+3.  Open the `subgraphs-labels` R Project file in your R IDE (we recommend, RStudio).
 4.  Confirm you have renv installed.
 5.  Restore the R environment using `renv::restore()` while in the `Subgraphs-for-Labels` R Project.
 6.  You can now run `Subgraph_labels.Rmd`
