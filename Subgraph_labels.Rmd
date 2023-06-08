@@ -33,6 +33,8 @@ library(reactable)
 
 Subgraphs are a product of [The Graph](https://thegraph.com/), which provide an industry standard on how to access blockchain data via open APIs. There are subgraphs for many things like governance, ENS, dex/defi liquidity pools and more! Many protocols leverage custom built subgraphs to track activity within their ecosystem.
 
+The reason Subgraphs are so valuable is because of the mappings that protocols can add to the data behind the scenes. Using on-chain data, one could easily find all the pools that a protocol has deployed; however, finding the exact names of those pools can often prove to be quite difficult and not exact. Protocols will often add a mapping agent to their subgraphs so that their contracts have clean names that are determined by the protocol itself! 
+
 Since these subgraphs are open, we can also tap into the data and label contract addresses! Predominantly, we focused on dex and defi protocols, in order to find any liquidity pools that belong to each protocol. 
 
 In order to be able to tap into these open APIs we are going to leverage Flipside Crypto's LiveQuery capabilities, which allows us to call an API within our SQL statements. 
